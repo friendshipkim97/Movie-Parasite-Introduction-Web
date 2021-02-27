@@ -1,0 +1,229 @@
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css); */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 
+    /* 'Spoqa Han Sans', */
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+
+    color: white;
+    background-color: #181818;
+}
+
+.container {
+    padding: 25px 5vw;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Header */
+.header_container {
+}
+
+.header_context {
+    z-index: 0;
+}
+
+.header_context, .header_context-bacground {
+    margin: 0 auto;
+    /* padding: 25px 5vw; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 5vw;
+}
+
+.header_context>a>img {
+    margin-top: 25px;
+    width: 10vw;
+    height: auto;
+}
+
+.header-title {
+    font-size: 24px;
+}
+
+.title-info-synopsis {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    width: 70vh;
+}
+
+.title_info_metadata {    
+    margin-right: 1vw;
+    font-size: 14px;
+}
+
+.title_info_metadata_item {
+    border-right: 1px solid #a3a3a3;
+    margin-right: 9px;
+    padding-right: 11px;
+}
+
+.maturity-number {
+    border: 1px solid #a1a1a1;
+    padding: 0 5px;
+}
+
+.header-title,
+.title-info-synopsis,
+.title_info_metadata,
+.title-info-talent {
+    padding-top: 16px;
+}
+
+.title-info-talent {
+    padding-bottom: 8vh;
+}
+
+.title-info-talent > div span{
+    color: #a3a3a3;
+}
+
+.header_context-bacground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -200px;
+    left: 0;
+    z-index: -1;
+    background-image: url(../../images/trailer/background.jpg);
+    /* background-size: 100% auto; */
+    background-size: cover;
+    
+}
+
+.header-background-gradient {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -200px;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to right, #171717 0, rgba(23, 23, 23, .98) 20%, rgba(23, 23, 23, .97) 25%, rgba(23, 23, 23, .95) 35%, rgba(23, 23, 23, .94) 40%, rgba(23, 23, 23, .92) 45%, rgba(23, 23, 23, .9) 50%, rgba(23, 23, 23, .87) 55%, rgba(23, 23, 23, .82) 60%, rgba(23, 23, 23, .75) 65%, rgba(23, 23, 23, .63) 70%, rgba(23, 23, 23, .45) 75%, rgba(23, 23, 23, .27) 80%, rgba(23, 23, 23, .15) 85%, rgba(23, 23, 23, .08) 90%, rgba(23, 23, 23, .03) 95%, rgba(23, 23, 23, 0) 100%);
+}
+
+/* ////////// */
+/* Section */
+/* ////////// */
+.main-section-container {
+    padding: 6vw 5vw;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* hook */
+.hook-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hook-hr {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #777 0, rgba(51, 51, 51, .5) 50%, #777 100%);
+        
+}
+
+.hook-hr:first-of-type {
+    margin-bottom: 18px;
+}
+
+.hook-header {
+    margin-top: 0;
+}
+
+.hook-text {
+    color: #a3a3a3;
+    padding-bottom: 2vw;
+}
+
+/* trailer */
+.section-header {
+    display: flex;
+    padding-top: 5vw;
+}
+
+.section-header h2 {
+    margin-top: 0;
+    padding-right: 15px;
+}
+
+.section-header-text {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.section-subheader-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #a3a3a3;
+    line-height: 36px;
+    border-left: 1px solid #a3a3a3;
+    padding-left: 15px;
+}
+
+/* /////////// */
+/* Slick style */
+/* /////////// */
+.slider {
+    width: 95%;
+    margin: 3vh auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+    min-height: 252px;
+    object-fit: cover;
+}
+
+.slick-prev:before,
+.slick-next:before {    
+    color: #e50914;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+/* ///// */
+/* pacla */
+/* ///// */
+.label-class {
+    background-color: rgba(0, 0, 0, .75);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <script src="js/jquery-3.5.1.js"></script>
+      <script src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/fullpage.js"></script>
+      <script type="text/javascript" src="js/imagesloaded.pkgd.js"></script>
+      <script type="text/javascript" src="js/masonry.pkgd.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+      <script src="js/vegas.js"></script>
+      <script src="js/jquery.colorbox.js"></script>
+      <script type="text/javascript" src="js/PHMain.js"></script>
+      <script src="js/Poster.js"></script> 
+      <script src="js/Home.js"></script> 
+
+        <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+      <link rel="stylesheet" type="text/css" href="css/vegas.css" />
+      <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+       <link rel="stylesheet" type="text/css" href="css/animate.css" /> 
+       <link rel="stylesheet" type="text/css" href="css/colorbox.css" /> 
+       <link rel="stylesheet" type="text/css" href="css/SusangMain.css" />
+       <link rel="stylesheet" type="text/css" href="css/Home.css" />
+       <link rel="stylesheet" type="text/css" href="css/Poster.css" />
+       <link rel="stylesheet" type="text/css" href="css/PHMain.css" />
+
+</head>
+    <body>
+
+        <div id="fullpage">
+         <div class="section "><img id="logoImg" src="myImages/etc/ParasiteLogo3.png" />
+            <p id="title">Posters & Home Photos</p>
+            <div class="goMain animate__animated animate__swing"><img class="GoHomeIcon animate__animated animate__jello" src="myImages/etc/ParasiteIcon2.png" /></div>
+         </div>
+         
+   <div class="section">
+      <div class="grid" >
+         <div class="grid-sizer"></div>
+         <div class="grid-item animate__animated animate__swing"><p class="posterName"><b>기생충 미국 포스터</b></p><a class = "posterA" title="기생충 미국 포스터" href="myImages/Poster/America.jpg"><img src="myImages/Poster/America.jpg"></a></div>
+         <div class="grid-item animate__animated animate__swing"><p  class="posterName"><b>기생충 브라질 포스터</b></p><a class = "posterA" title="기생충 브라질 포스터" href="myImages/Poster/Brazil.jpg"><img src="myImages/Poster/Brazil.jpg" /> </a></div>
+         <div class="grid-item animate__animated animate__swing"><p  class="posterName"><b>기생충 캐나다 포스터</b></p> <a class = "posterA" title="기생충 캐나다 포스터"  href="myImages/Poster/Canada.jpg"><img src="myImages/Poster/Canada.jpg" /></a></div>
+         <div class="grid-item animate__animated animate__swing"><p  class="posterName"><b>기생충 영국 포스터</b></p> <a class = "posterA" title="기생충 영국 포스터"  href="myImages/Poster/England.jpg"><img src="myImages/Poster/England.jpg" /></a></div>
+         <div class="grid-item animate__animated animate__swing"><p class="posterName"><b>기생충 영국2 포스터</b></p><a class = "posterA" title="기생충 영국2 포스터"   href="myImages/Poster/England2.jpg"><img src="myImages/Poster/England2.jpg" /></a></div>
+         <div class="grid-item animate__animated animate__swing"><p  class="posterName"><b>기생충 프랑스 포스터</b></p><a class = "posterA" title="기생충 프랑스 포스터"  href="myImages/Poster/France.jpg"><img src="myImages/Poster/France.jpg" /></a></div>
+         <div class="grid-item animate__animated animate__swing"><p  class="posterName"><b>기생충 프랑스2 포스터</b></p><a class = "posterA" title="기생충 프랑스2 포스터"  href="myImages/Poster/France2.jpg"><img src="myImages/Poster/France2.jpg" /></a></div>
+         <div class="grid-item animate__animated animate__swing"><p class="posterName"><b>기생충 인터네셔널 포스터</b></p><a class = "posterA" title="기생충 인터네셔널 포스터"  href="myImages/Poster/International.jpg"><img src="myImages/Poster/International.jpg" /></a></div>
+         <div class="grid-item animate__animated animate__swing"><p class="posterName"><b>기생충 일본 포스터</b></p> <a class = "posterA" title="기생충 일본 포스터"   href="myImages/Poster/Japan.jpg"><img src="myImages/Poster/Japan.jpg" /></a></div>
+         <div class="grid-item animate__animated animate__swing"><p class="posterName"><b>기생충 한국 포스터</b></p><a class = "posterA" title="기생충 한국 포스터"  href="myImages/Poster/Korea.jpg"><img src="myImages/Poster/Korea.jpg" /></a></div>
+      </div>
+      <div class="goMain  animate__animated animate__swing"><img class="GoHomeIcon animate__animated animate__jello" src="myImages/etc/ParasiteIcon2.png" /></div>
+    </div>
+    <div class="section" id="home">
+      <div id="side"><p class="homeText animate__animated animate__slideInLeft"><b>Introduction to Parasite House</b><p></div>
+         <div class="goMain animate__animated animate__swing"><img class="GoHomeIcon animate__animated animate__jello" src="myImages/etc/ParasiteIcon2.png" /></div>
+    </div>
+        </div>
+        <script>
+var myFullpage = new fullpage('#fullpage', {
+              
+licenseKey: '',
+    menu: '#menu',
+   lockAnchors: false,
+   anchors:['firstPage', 'secondPage', 'thirdPage'],
+   navigation: true,
+   navigationPosition: 'right',
+   navigationTooltips: ['Poster&Home Main', 'Poster', 'Home'],
+   showActiveTooltip: false,
+   slidesNavigation: false,
+   slidesNavPosition: 'bottom',
+
+   //Scrolling
+   css3: true,
+   scrollingSpeed: 700,
+   autoScrolling: true,
+   fitToSection: true,
+   fitToSectionDelay: 1000,
+   scrollBar: false,
+   easing: 'easeInOutCubic',
+   easingcss3: 'ease',
+   loopBottom: false,
+   loopTop: false,
+   loopHorizontal: true,
+   continuousVertical: false,
+   continuousHorizontal: false,
+   scrollHorizontally: false,
+   interlockedSlides: false,
+   dragAndMove: false,
+   offsetSections: false,
+   resetSliders: false,
+   fadingEffect: false,
+   normalScrollElements: '#element1, .element2',
+   scrollOverflow: false,
+   scrollOverflowReset: false,
+   scrollOverflowOptions: null,
+   touchSensitivity: 15,
+   bigSectionsDestination: null,
+
+   //Accessibility
+   keyboardScrolling: true,
+   animateAnchor: true,
+   recordHistory: true,
+
+    //Design
+    sectionsColor: ['black', 'black', 'black'],
+   controlArrows: true,
+   verticalCentered: true,
+   paddingTop: '3em',
+   paddingBottom: '10px',
+   fixedElements: '#header, .footer',
+   responsiveWidth: 0,
+   responsiveHeight: 0,
+   responsiveSlides: false,
+   parallax: false,
+   parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+   cards: false,
+   cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+
+   //Custom selectors
+   sectionSelector: '.section',
+   slideSelector: '.slide',
+
+   lazyLoading: true,
+
+   //events
+   onLeave: function(origin, destination, direction){
+      if(origin.index==0){
+      $('#logoImg').removeClass('animate__hinge');
+      $('.GoHomeIcon').removeClass('animate__jello');
+      }
+      else if(origin.index==1){
+      $('.grid-item').removeClass('animate__swing');
+      $('.GoHomeIcon').removeClass('animate__jello');
+      }
+      else if(origin.index==2){
+      $('.GoHomeIcon').removeClass('animate__jello');
+      $('.homeText').removeClass('animate__slideInLeft');
+      }
+    },
+    // onSlideLeave: function(){
+    //   $('.grid-item').removeClass('animate__swing');
+    //   $('#logoImg').removeClass('animate__hinge');
+    //   $('.GoHomeIcon').removeClass('animate__jello');
+    //   $('.homeText').removeClass('animate__slideInLeft');
+    // },
+    // afterSlideLoad: function(){
+    //   $('.grid-item').addClass('animate__swing');
+    //   $('#logoImg').addClass('animate__hinge');
+    //   $('.GoHomeIcon').addClass('animate__jello');
+    //   $('.homeText').addClass('animate__slideInLeft');
+    // },
+    afterLoad: function(origin, destination, direction){
+      if(destination.index==0){
+      $('#logoImg').addClass('animate__hinge');
+      $('.GoHomeIcon').addClass('animate__jello');
+      }
+      else if(destination.index==1){
+         $('.grid-item').addClass('animate__swing');
+         $('.GoHomeIcon').addClass('animate__jello');
+      }
+      else if(destination.index==2){
+      $('.GoHomeIcon').addClass('animate__jello');
+      $('.homeText').addClass('animate__slideInLeft');
+      }
+   }}
+   );
+   var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});  
+            </script>
+      
+    </body>
+
+</html>

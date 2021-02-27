@@ -1,0 +1,44 @@
+
+.SusangnaeyorkVegas{
+    position: relative;
+     margin-left:7%;
+     margin-top:2%;
+     width: 450px;
+     height: 450px;
+     float: left;
+     display: block;
+}
+
+.SusangnaeyorkContext{
+    position: relative;
+    float: right;
+    margin-top:0px;
+    margin-right:15%;
+    width:450px;
+    height: 450px;
+    padding:0px;
+    display: block;
+    color:white;
+
+}
+.section {
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: middle;
+    /* font-family: 'NotoSans', sans-serif; */
+    line-height: 42px;
+    color: white;
+    
+}
+
+.SpeechTitle{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+

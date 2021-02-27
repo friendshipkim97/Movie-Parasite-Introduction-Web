@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <meta charset="UTF-8">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <style>
+
+            body {
+                background-image: url('images/배우소개/ShowActorBackground.png');
+                background-attachment: fixed;
+                /* background-repeat: no-repeat; */
+                width: 1700px;
+                height: 100px;
+
+            }
+            .actor1 {
+                width: 600px;
+                height: 500px;
+                margin-left: 200px;
+                margin-top: 100px;
+                position: absolute;
+                text-align: center;  
+                color: white;
+                font-size: 70px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .actor2 {
+                width: 600px;
+                height: 500px;
+                margin-left: 700px;
+                margin-top: 100px;
+              
+                position: absolute;
+                text-align: center;
+                
+                color: white;
+                font-size: 70px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            ul{
+                list-style:none;
+            }
+            ul li{
+                margin-bottom: 15%;
+            }
+            a{
+                text-decoration: none;
+                color:white;
+            }
+
+            .goMain{
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+}
+
+.goMain img{
+    width: 100px;
+    height: 100px;
+}
+            
+        </style>
+        <script src="js/jquery-3.5.1.js"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Cute+Font&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/Panimate.css" /> 
+        <script src="js/text.js"></script>
+    </head>
+    <body>
+        <div class="actor1"> 
+            <ul>
+          <a href="https://people.search.naver.com/search.naver?where=nexearch&query=%EC%86%A1%EA%B0%95%ED%98%B8&sm=tab_etc&ie=utf8&key=PeopleService&os=94504"> <li class="typingText" typing = "송강호배우란?">송강호</li></a>
+          <a href="https://people.search.naver.com/search.naver?where=nexearch&query=%EC%9D%B4%EC%84%A0%EA%B7%A0&sm=tab_etc&ie=utf8&key=PeopleService&os=97698">  <li class="typingText" typing = "이선균배우란?">이선균</li></a>
+           <a href="https://people.search.naver.com/search.naver?where=nexearch&query=%EC%A1%B0%EC%97%AC%EC%A0%95&sm=tab_etc&ie=utf8&key=PeopleService&os=95001"> <li class="typingText" typing = "조여정배우란?">조여정</li></a>
+            <ul>
+        </div>
+        <div class="actor2"> 
+            <ul>
+                <a href="https://people.search.naver.com/search.naver?where=nexearch&query=%EC%B5%9C%EC%9A%B0%EC%8B%9D&sm=tab_etc&ie=utf8&key=PeopleService&os=211973"><li class="typingText" typing = "최우식배우란?">최우식</li></a>
+                <a href="https://people.search.naver.com/search.naver?where=nexearch&query=%EB%B0%95%EC%86%8C%EB%8B%B4&sm=tab_etc&ie=utf8&key=PeopleService&os=1925836"> <li class="typingText" typing = "박소담배우란?">박소담</li></a>
+                <a href="https://people.search.naver.com/search.naver?where=nexearch&query=%EC%9D%B4%EC%A0%95%EC%9D%80&sm=tab_etc&ie=utf8&key=PeopleService&os=155873"><li class="typingText" typing = "이정은배우란?">이정은</li></a>
+            <ul>
+        </div>
+
+        <div class="goMain">
+            <a href="index.html"><img class="GoHomeIcon animate__animated animate__jello" src="images/배우소개/parasite.png" /></a></div>
+        
+    </body>
+
+    <script>
+ $('.typingText').typingText(100);
+    </script>
+</html>

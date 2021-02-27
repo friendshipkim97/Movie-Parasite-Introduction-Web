@@ -1,0 +1,39 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* h1 {
+
+  background: #181818;
+
+
+  margin: 0px 0px;
+  padding: 0px 0px;
+
+
+  width: 200px;
+  height: 300px;
+
+  writing-mode: vertical-rl;
+  color:white;
+  font-size: 50px;
+} */
+
+.jumbotron {
+  position: absolute;
+  background: #181818;
+  background: #181818;
+  margin-top: 100px;
+  margin-left: 100px;
+  padding-right: 50px;
+  width: 200px;
+  height: 500px;
+  writing-mode: vertical-rl;
+  color:white;
+  font-size: 65px;
+}
+
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <meta charset="UTF-8">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <style>
+            body {
+                width: 1500px;
+                height: 600px;
+                background-color:#181818;
+            }
+            .goMain{
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+}
+
+.goMain img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+        </style>
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/jquery.lettering.js"></script>       
+        <script src="js/jquery.textillate.js"></script>        
+
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        
+        <link type="text/css" rel="stylesheet" href="css/steelcut.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/Panimate.css" />  -->
+        <script>
+             $(function (){
+
+var animateClasses = 'flash bounce shake tada swing wobble pulse flip flipInX flipOutX flipInY flipOutY fadeIn fadeInUp fadeInDown fadeInLeft fadeInRight fadeInUpBig fadeInDownBig fadeInLeftBig fadeInRightBig fadeOut fadeOutUp fadeOutDown fadeOutLeft fadeOutRight fadeOutUpBig fadeOutDownBig fadeOutLeftBig fadeOutRightBig bounceIn bounceInDown bounceInUp bounceInLeft bounceInRight bounceOut bounceOutDown bounceOutUp bounceOutLeft bounceOutRight rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge rollIn rollOut';
+
+var $form = $('.playground form')
+  , $viewport = $('.playground .viewport');
+
+var getFormData = function () {
+  var data = {
+    loop: true,
+    in: { callback: log('in callback called.') },
+    out: { callback: log('out callback called.') }
+  };
+
+  $form.find('[data-key="type"]').each(function () {
+    var $this = $(this)
+      , key = $this.data('key')
+      , type = $this.data('type')
+      , val = $this.val();
+
+      data[type].shuffle = (val === 'shuffle');
+      data[type].reverse = (val === 'reverse');
+      data[type].sync = (val === 'sync');
+  });
+  return data;
+};
+$('.jumbotron h1')
+  .fitText(0.5)
+  .textillate({ in: { effect: 'flipInY' }});
+
+setTimeout(function () {
+  $('h1.glow').removeClass('in');
+}, 5000);
+
+$form.on('change', function () {
+  var obj = getFormData();
+  $tlt.textillate(obj);
+}).trigger('change');
+});
+
+      
+            $(document).ready(function(){
+            window.resizeBy(190,190);
+         
+         $(function(){
+              
+                $('.images').bxSlider({
+                    auto : true,
+                    autoHover: true,
+                    pager : true,
+                    slideMargin : 0,
+                    speed: 1000,
+                    pause: 3000,
+                    
+                  
+                });
+              });
+            });
+           
+        </script>
+    </head>
+    <body>
+      <div class="jumbotron">
+  		  <h1 id="main">기생충 스틸컷</h1>
+          </div>
+
+        <div class="MainFrame">
+            <div class="images" >
+                <div><a></a><img src="images/스틸컷/SteelCut1.jpg" class="zoom"></div>
+                <div><img src="images/스틸컷/SteelCut2.jpg" class="zoom"></div>
+                <div><img src="images/스틸컷/SteelCut3.jpg" class="zoom"></div>
+            </div>
+
+            <div class="goMain">
+              <a href="index.html"><img class="GoHomeIcon animate__animated animate__jello" src="images/배우소개/parasite.png" /></a></div>
+
+   
+    </body>
+</html>

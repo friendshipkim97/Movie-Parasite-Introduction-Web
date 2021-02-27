@@ -1,0 +1,22 @@
+#title {
+    margin-left: 15%;
+    font-size:30px;
+    color:white;
+}
+
+#logoImg{
+    margin-left: 5%;
+}
+
+.goMain{
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+}
+
+.goMain img{
+    width: 100px;
+    height: 100px;
+}
+
+

@@ -1,0 +1,60 @@
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css); */
+ 
+ * { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+/* ---- grid ---- */
+
+.grid {
+  position: absolute;
+  top:0px;
+  left:0px;
+  background:black;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 25%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 5%; 
+  padding:5%; 
+  
+}
+
+.grid-item a {
+  display: block;
+  max-width: 100%;
+  
+}
+.posterName {
+  position: absolute; top: 50%; left: 50%; color: white; transform: translate(-50%, -50%); opacity: 0; transition: all 0.5s;
+  font-size:20px;
+}
+
+.grid-item:hover img{
+  opacity: 0.5;
+}
+
+.grid-item:hover .posterName{
+  opacity: 1;
+}

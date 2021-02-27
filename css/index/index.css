@@ -1,0 +1,196 @@
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css); */
+
+body {
+    /* color: white; */    
+    margin: 0;
+    padding: 0;
+    font-family:
+        /* 'Spoqa Han Sans', */
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+
+    background-color: black;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+#container {
+    width: 100%;        
+}
+
+/* Header */
+.header_container {
+    /* width: 100vw; */
+    height: 28em;
+    padding: 10em;
+    color: white;
+}
+
+@media all and (min-width:320px) {
+    .header_container {
+        height: 28em;
+    }
+}
+
+@media all and (min-width:768px) {
+
+    /* 스타일 지정 부분*/
+}
+
+@media all and (min-width:1024px) {
+
+    /* 스타일 지정 부분*/
+}
+
+
+/* Header logo */
+.header_context>img {
+    width: 20em;
+    height: auto;
+}
+
+.header_context-bacground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    left: 0;
+    z-index: -1;
+    background-image: url(../../images/index/background0.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+/* second section */
+.second_section {
+    /* width: 100%; */
+    min-height: 100vh;
+    height: auto;
+    padding: 5em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.second_section > article {
+    text-align: justify;
+    width: 300px;
+}
+
+/* third section */
+.third_section {
+    min-height: 100vh;
+    height: auto;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.third_section > h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin: 0 0 0.5em 0;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.pic {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+}
+
+.pic:last-child{
+    padding-right: 0;
+}
+
+.pic > a > img {
+    width: 346px;
+    height: auto;
+    max-height: 241px;
+    object-fit: cover;
+}
+
+/* button */
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* More Trailer & Making Button */
+
+.btn_more_trailer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0 6em 0;
+}
+
+.btn_more_trailer_container>a {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+.btn_more_trailer {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn_more_trailer:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn_more_trailer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(146, 148, 248, 0.4),
+            transparent);
+    transition: all 650ms;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 2rm;
+}

@@ -1,0 +1,11 @@
+.homeText{
+    font-size: 40px;
+    font-weight: 400;
+    vertical-align: middle;
+    font-family: 'NotoSans', sans-serif;
+    line-height: 42px;
+    color:white;
+    position: absolute;
+    left:100px;
+    top:550px;
+}
